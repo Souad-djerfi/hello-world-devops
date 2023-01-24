@@ -103,7 +103,7 @@
       width: 100%;
       }
       button:hover, .btn-item:hover {
-      background: #85d6de;
+      background: #33abb6;
       }
       @media (min-width: 568px) {
       html, body {
