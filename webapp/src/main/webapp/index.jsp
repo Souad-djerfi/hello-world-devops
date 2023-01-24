@@ -79,10 +79,10 @@
       vertical-align: middle;
       }
       .checkbox a {
-      color: #26a9e0;
+      color: #e0262c;
       }
       .checkbox a:hover {
-      color: #85d6de;
+      color: #dedd85;
       }
       .btn-item, button {
       padding: 10px 5px;
@@ -93,7 +93,7 @@
       text-decoration: none;
       font-size: 15px;
       font-weight: 400;
-      color: #fff;
+      color: rgb(255, 255, 255);
       }
       .btn-item {
       display: inline-block;
