@@ -1,8 +1,8 @@
 all:
-  children:
-    ansible-server:
-      hosts:
-        localhost:
-    docker-server:
-      hosts:
-        dockerhost:
+ children:
+   ansible-server:
+     hosts:
+       localhost:
+   docker-server:
+     hosts:
+       dockerhost:

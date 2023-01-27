@@ -13,7 +13,7 @@
   - name: push image
     command: docker push souaddjerfi/tomcat:latest
 
-- name: pull and run image
+- name: pull and run image sur dockerhost
   become: yes
   hosts: all
   tasks: 
