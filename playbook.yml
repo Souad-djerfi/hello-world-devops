@@ -14,5 +14,5 @@
     command: docker push souaddjerfi/tomcat:latest
 
   - name:  run dans dockerhost 
-    command: run --host=52.3.244.120 -it tomcat
+    command: docker run --host=52.3.244.120 -it tomcat
 
