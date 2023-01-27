@@ -5,6 +5,7 @@
   tasks:
   - name: supprimer conteneur tomcat s'il exist
     command: docker rm --force tomcat
+    ignore_errors: yes
   - name: build image
     command: docker build -t tomcat /opt/ansible/
 
@@ -21,6 +22,7 @@
     command: docker pull souaddjerfi/tomcat:latest
   - name: supprimer conteneur sil existe
     command: docker rm -f tomcat
+    ignore_errors: yes
   - name:  run dans dockerhost 
     command: docker run -d --name tomcat -p 8082:8080 souaddjerfi/tomcat:latest
 
