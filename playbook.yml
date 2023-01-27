@@ -1,4 +1,3 @@
- 
 - name: create container
   become: yes
   hosts: localhost
@@ -16,7 +15,7 @@
 
 - name: pull and run image
   become: yes
-  hosts: 172.31.50.133
+  hosts: docker-server
   tasks: 
   - name: pull image dans docker host
     command: docker pull souaddjerfi/tomcat:latest

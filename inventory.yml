@@ -1,0 +1,7 @@
+ansible-server:
+  hosts:
+    ansible: localhost
+
+docker-server:
+  hosts:
+    dockerhost
