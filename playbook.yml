@@ -17,8 +17,10 @@
   become: yes
   hosts: 172.31.50.133
   tasks: 
-  - name: pull image
+  - name: pull image dans docker host
     command: docker pull souaddjerfi/tomcat:latest
+  - name: supprimer conteneur sil existe
+    command: docker rm -f tomcat
   - name:  run dans dockerhost 
     command: docker run -d --name tomcat -p 8082:8080 souaddjerfi/tomcat:latest
 
