@@ -15,7 +15,7 @@
 
 - name: pull and run image
   become: yes
-  hosts: docker-server
+  hosts: all
   tasks: 
   - name: pull image dans docker host
     command: docker pull souaddjerfi/tomcat:latest
