@@ -14,7 +14,7 @@
     command: docker push souaddjerfi/tomcat:latest
 
 - name: pull and run image
-  hosts: dockerhost
+  hosts: 172.31.50.133
   tasks: 
   - name: pull image
     command: docker pull souaddjerfi/tomcat:latest
