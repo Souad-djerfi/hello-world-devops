@@ -1,0 +1,15 @@
+ 
+- name: create container
+  become: yes
+  hosts: localhost
+  tasks:
+  - name: supprimer conteneur tomcat s'il exist
+    command: docker rm --force tomcat
+  - name: build image
+    command: docker build -t tomcat /opt/ansible/
+
+  - name: tag image
+    command: docker image tag tomcat souaddjerfi/tomcat:latest
+  - name: push image
+    command: docker push souaddjerfi/tomcat:latest
+
