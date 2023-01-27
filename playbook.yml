@@ -13,6 +13,11 @@
   - name: push image
     command: docker push souaddjerfi/tomcat:latest
 
+- name: pull and run image
+  hosts: dockerhost
+  tasks: 
+  - name: pull image
+    command: docker pull souaddjerfi/tomcat:latest
   - name:  run dans dockerhost 
-    command: docker run --host=52.3.244.120 -it tomcat
+    command: docker run -d --name tomcat -p 8082:8080 souaddjerfi/tomcat:latest
 
