@@ -2,4 +2,4 @@ all:
  children:
    docker-server:
      hosts:
-       dockerhost:
+       node2:
